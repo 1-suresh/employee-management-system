@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h2 Employee List
+  table
+    thead
+      tr
+        th ID
+        th Name
+        th Email
+        th Mobile No
+        th Gender
+        th Department
+        th Location
+        th Actions
+    tbody
+      if employees.length
+        each emp in employees
+          tr
+            td= emp.e_id
+            td= emp.e_name
+            td= emp.e_email
+            td= emp.e_mobileno
+            td= emp.e_gender
+            td= emp.e_dept
+            td= emp.e_location
+            td.actions
+              a.btn-edit(href=`/edit/${emp._id}`)
+                | ✏️ Edit
+              a.btn-delete(href=`/delete/${emp._id}` onclick="return confirm('Are you sure you want to delete this employee?')") 
+                | 🗑️ Delete
+      else
+        tr
+          td(colspan="8") No employees found.

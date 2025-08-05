@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h2 Edit Employee
+  form(action=`/update/${employee._id}`, method="POST")
+    .form-group
+      label(for="e_id") Employee ID:
+      input#e_id(type="text", name="e_id", value=employee.e_id, placeholder="Enter Employee ID", required)
+
+    .form-group
+      label(for="e_name") Name:
+      input#e_name(type="text", name="e_name", value=employee.e_name, placeholder="Enter Full Name", required)
+
+    .form-group
+      label(for="e_email") Email:
+      input#e_email(type="email", name="e_email", value=employee.e_email, placeholder="Enter Email Address", required)
+
+    .form-group
+      label(for="e_mobileno") Mobile No:
+      input#e_mobileno(type="text", name="e_mobileno", value=employee.e_mobileno, placeholder="Enter Mobile Number", required)
+
+    .form-group
+      label(for="e_gender") Gender:
+      select#e_gender(name="e_gender", required)
+        option(value="", disabled) Select Gender
+        option(value="Male", selected=employee.e_gender=="Male") Male
+        option(value="Female", selected=employee.e_gender=="Female") Female
+        option(value="Other", selected=employee.e_gender=="Other") Other
+
+    .form-group
+      label(for="e_dept") Department:
+      input#e_dept(type="text", name="e_dept", value=employee.e_dept, placeholder="Enter Department", required)
+
+    .form-group
+      label(for="e_location") Location:
+      input#e_location(type="text", name="e_location", value=employee.e_location, placeholder="Enter Location", required)
+
+    button(type="submit") ✏️ Update Employee

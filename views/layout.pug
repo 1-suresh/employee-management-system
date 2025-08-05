@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Employee Management
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/style.css")
+    // Optional: Modern Google Font
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap")
+  body
+    header
+      h1 Employee Management
+      nav
+        a.nav-btn(href="/") 🏠 Home
+        a.nav-btn(href="/new") ➕ Add Employee
+    main
+      block content
+    footer
+      p © #{new Date().getFullYear()} Employee Management System
