@@ -16,6 +16,14 @@ A web application to manage employee records using Node.js, Express, MongoDB, an
 - **Frontend**: Pug template engine, HTML, CSS
 - **Database**: MongoDB (via Mongoose ODM)
 
+## 📷 Screenshot
+<img width="1888" height="743" alt="Screenshot 2025-08-06 212828" src="https://github.com/user-attachments/assets/ad816b01-0a4b-4187-b287-b0359cebbb33" />
+<br />
+<br />
+<img width="1836" height="904" alt="Screenshot 2025-08-06 212850" src="https://github.com/user-attachments/assets/b4b565ee-bd0f-4292-bb54-5f27d0a0d649" />
+
+
+
 ## 📁 Project Structure
 
 employee-crud-node-express/<br />
@@ -52,13 +60,10 @@ npm install
 
 4. ✨ Screens
    
-/ → Displays all employee data
-
-  /new → Add new employee
-
-  /edit/:id → Edit selected employee
-
-  /delete/:id → Delete employee
+ + Displays all employee data
+ + Add new employee
+ + Edit selected employee
+ + Delete employee
 
 ## 📄 License
 This project is licensed under the ISC License.
