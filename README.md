@@ -26,7 +26,7 @@ A web application to manage employee records using Node.js, Express, MongoDB, an
 
 ## 📁 Project Structure
 
-employee-crud-node-express/<br />
+employee-management-system/<br />
 ├── models/<br />
 │ └── Employee.js # Mongoose schema<br />
 ├── public/<br />
@@ -44,7 +44,7 @@ employee-crud-node-express/<br />
 
 Make sure you have **Node.js** and **MongoDB** installed on your system.
 
-git clone https://github.com/suresh-datt-joshi/employee-crud-node-express.git
+git clone https://github.com/suresh-datt-joshi/employee-management-system.git
 cd employee-crud-node-express
 npm install
 
