@@ -44,7 +44,7 @@ employee-crud-node-express/<br />
 
 Make sure you have **Node.js** and **MongoDB** installed on your system.
 
-git clone https://github.com/your-username/employee-crud-node-express.git
+git clone https://github.com/suresh-datt-joshi/employee-crud-node-express.git
 cd employee-crud-node-express
 npm install
 
